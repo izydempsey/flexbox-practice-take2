@@ -113,6 +113,7 @@ body {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
@@ -126,15 +127,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3%;
+  padding: 2%;
+  box-sizing: border-box;
+  margin: 1%;
 }
 
 .div-2, .div-3 {
     border-left: 1px solid #999;
 }
 
+/***** adding organizing and flexboxing the header footer and main *****/
 
+header,
+footer,
+main {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+header,
+footer {
+  background-color: #222;
+  height: 80px;
+  width: 100%;
+}
+main {
+    height: 250px;
+    width: 100%;
+    border-bottom: 2px solid #999;
+}
 
+/**** styling for header footer and main *****/
+
+header {
+    font-size: 2em;
+    justify-content: start;
+}
+
+footer {
+    font-size: 1em;
+    justify-content: center;
+    border-top: 2px solid #999;
+}
 
 /* ==========================================================================
    Helper classes
